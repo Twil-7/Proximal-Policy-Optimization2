@@ -1,6 +1,6 @@
 import os
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+os.environ['CUDA_VISIBLE_DEVICES'] = '2'
 
 import numpy as np
 import torch
@@ -370,3 +370,31 @@ def train():
 
 if __name__ == "__main__":
     train()
+
+    """
+        Initial Evaluation Safe Rate: 0.1484
+        Update 10, Safe Rate: 0.1250
+        Update 20, Safe Rate: 0.5890
+        Update 30, Safe Rate: 0.8230
+        Update 40, Safe Rate: 0.7480
+        Update 50, Safe Rate: 0.9200
+        Update 60, Safe Rate: 0.9170
+        Update 70, Safe Rate: 0.9970
+        Update 80, Safe Rate: 0.9510
+        Update 90, Safe Rate: 0.9680
+        Update 100, Safe Rate: 0.9930
+        ......
+        Update 2400, Safe Rate: 0.9950
+        Update 2410, Safe Rate: 0.9800
+        Update 2420, Safe Rate: 0.9860
+        Update 2430, Safe Rate: 0.9990
+        Update 2440, Safe Rate: 0.9930
+        Update 2450, Safe Rate: 0.9800
+        Update 2460, Safe Rate: 0.9780
+        Update 2470, Safe Rate: 0.9870
+        Update 2480, Safe Rate: 0.9890
+        Update 2490, Safe Rate: 0.9480
+        Update 2500, Safe Rate: 0.9660
+        Final Evaluation Safe Rate: 0.9855
+    
+    """
