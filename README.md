@@ -23,9 +23,7 @@ Proximal Policy Optimization Algorithm
 
 # 代码运行
 
-这里PPO算法采用的是标准的Actor-Critic框架。
-
-主要介绍三种实现方式：蒙特卡洛方法、时序差分方法、广义优势估计方法。
+这里PPO算法采用的是标准的Actor-Critic框架。主要介绍三种实现方式：蒙特卡洛方法、时序差分方法、广义优势估计方法。
 
 采用基于蒙特卡洛方法的PPO算法，运行方式如下：
 
@@ -90,7 +88,7 @@ python train_TD.py
     Update 80, Success Rate: 0.999
     Update 90, Success Rate: 0.917
     Update 100, Success Rate: 0.982
-    ... ...
+    ......
     Update 2400, Success Rate: 0.996
     Update 2410, Success Rate: 0.997
     Update 2420, Success Rate: 0.978
@@ -107,5 +105,28 @@ python train_TD.py
 
 采用基于广义优势估计方法的PPO算法，实验结果如下：
 ```bash
-    
+    Initial Evaluation Safe Rate: 0.1484
+    Update 10, Safe Rate: 0.1250
+    Update 20, Safe Rate: 0.5890
+    Update 30, Safe Rate: 0.8230
+    Update 40, Safe Rate: 0.7480
+    Update 50, Safe Rate: 0.9200
+    Update 60, Safe Rate: 0.9170
+    Update 70, Safe Rate: 0.9970
+    Update 80, Safe Rate: 0.9510
+    Update 90, Safe Rate: 0.9680
+    Update 100, Safe Rate: 0.9930
+    ......
+    Update 2400, Safe Rate: 0.9950
+    Update 2410, Safe Rate: 0.9800
+    Update 2420, Safe Rate: 0.9860
+    Update 2430, Safe Rate: 0.9990
+    Update 2440, Safe Rate: 0.9930
+    Update 2450, Safe Rate: 0.9800
+    Update 2460, Safe Rate: 0.9780
+    Update 2470, Safe Rate: 0.9870
+    Update 2480, Safe Rate: 0.9890
+    Update 2490, Safe Rate: 0.9480
+    Update 2500, Safe Rate: 0.9660
+    Final Evaluation Safe Rate: 0.9855
 ```
