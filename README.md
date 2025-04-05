@@ -23,7 +23,9 @@ Proximal Policy Optimization Algorithm
 
 # 代码运行
 
-这里PPO算法采用的是标准的Actor-Critic框架，包括三种实现方式：蒙特卡洛方法、时序差分方法、广义优势估计方法。
+这里PPO算法采用的是标准的Actor-Critic框架。
+
+主要介绍三种实现方式：蒙特卡洛方法、时序差分方法、广义优势估计方法。
 
 采用基于蒙特卡洛方法的PPO算法，运行方式如下：
 
