@@ -39,7 +39,7 @@ python train_TD.py
 
 采用基于广义优势估计方法的PPO算法，运行方式如下：
 ```bash
-python train_TD.py
+python train_GAE.py
 ```
 
 
